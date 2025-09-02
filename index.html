@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryam — IT System Analyst</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-row">
+            <div>
+                <h1>Maryam</h1>
+                <p class="tagline">IT System Analyst — 1.5 years experience working on diverse projects</p>
+            </div>
+            <div class="header-actions">
+                <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>Hi — I'm Maryam, an IT system analyst with 1.5 years of experience. I have worked on various types of projects including systems analysis, process improvement, and small-scale automation. I focus on clear requirements, reliable designs, and delivering value quickly.</p>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Selected Projects</h2>
+            <ul class="projects-list">
+                <li>
+                    <strong>Inventory Tracking Improvement</strong>
+                    <p>Streamlined reporting and reconciliations for a mid-size client using automated exports and validation rules.</p>
+                </li>
+                <li>
+                    <strong>Internal Ticketing Workflow</strong>
+                    <p>Designed and documented a ticket triage and escalation workflow to reduce mean time to resolution.</p>
+                </li>
+                <li>
+                    <strong>Process Documentation & Training</strong>
+                    <p>Created user guides and runbooks for new systems and trained teams for handover.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, send me a message below.</p>
+
+            <form id="contactForm" class="contact-form" method="post" data-endpoint="">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <div class="form-actions">
+                    <button type="submit">Send message</button>
+                </div>
+
+                <div id="formStatus" class="form-status" aria-live="polite"></div>
+            </form>
+
+            <p class="note">Note: This site is static. By default the form opens your email client (mailto). To receive messages from this form on the web, add a form endpoint (e.g., Formspree) in the `data-endpoint` attribute of the form. See the README for details.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Maryam — IT System Analyst</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

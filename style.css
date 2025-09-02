@@ -1,0 +1,46 @@
+:root{
+    --bg:#f5f7fb;
+    --card:#ffffff;
+    --accent:#6b7280; /* grey accent */
+    --muted:#6b7280;
+}
+:root[data-theme='dark']{
+    --bg:#0b1220;
+    --card:#071226;
+    --accent:#9ca3af; /* lighter grey for dark theme */
+    --muted:#9aa6b2;
+}
+*{box-sizing:border-box}
+body{
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    margin:0;
+    background:var(--bg);
+    color:#111827;
+    -webkit-font-smoothing:antialiased;
+}
+.container{max-width:900px;margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,#6b7280 0%,#4b5563 100%);color:white;padding:2rem 0;text-align:center}
+.site-header h1{margin:0;font-size:2rem}
+.tagline{margin-top:.5rem;opacity:.95}
+.header-row{display:flex;align-items:center;justify-content:space-between}
+.header-actions{display:flex;align-items:center;gap:.5rem}
+.theme-toggle{background:transparent;border:1px solid rgba(255,255,255,0.18);color:white;padding:.4rem .6rem;border-radius:6px;cursor:pointer}
+.theme-toggle[aria-pressed="true"]{background:rgba(255,255,255,0.08)}
+.card{background:var(--card);padding:1.5rem;margin:1.25rem 0;border-radius:8px;box-shadow:0 6px 18px rgba(75,85,99,0.06)}
+h2{margin-top:0}
+.projects-list{list-style:none;padding:0;margin:0}
+.projects-list li{padding:.5rem 0;border-bottom:1px solid #f1f5f9}
+.projects-list li p{margin:.25rem 0;color:var(--muted)}
+
+.contact-form label{display:block;margin:.5rem 0 .25rem;font-weight:600}
+.contact-form input,.contact-form textarea{width:100%;padding:.6rem;border:1px solid #e6edf3;border-radius:6px}
+.form-actions{margin-top:1rem;text-align:right}
+.contact-form button{background:var(--accent);color:white;border:none;padding:.6rem 1rem;border-radius:6px;cursor:pointer}
+.contact-form button:hover{opacity:.95}
+.form-status{margin-top:.5rem;color:var(--muted)}
+.note{font-size:.9rem;color:var(--muted);margin-top:.75rem}
+.site-footer{padding:1rem 0;text-align:center;color:var(--muted)}
+
+@media(min-width:700px){
+    .site-header h1{font-size:2.6rem}
+}
